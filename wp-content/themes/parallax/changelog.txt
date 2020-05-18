@@ -1,0 +1,187 @@
+Parallax Free Changelog
+
+****************************
+Version 1.7 (12-18-18)
+- Added customizer support for Gutenberg
+- Fixed cyberchimps page elements issue in wordpress 5.0
+
+Version 1.6 (11-20-18)
+- Added gutenberg compatibility
+- Added contact us and testimonial element
+
+Version 1.5 (07-31-17)
+- Added author gravatar for blog posts
+
+Version 1.4 (06-29-17)
+- Added featured area element
+
+Version 1.3 (10-05-17)
+- Fixed warnings
+
+Version 1.2 (18-04-17)
+- Fixed issue with PHP version 7.1
+- Fixed issue with loading google fonts (used protocol relative link)
+
+Version 1.1 (10-03-16)
+- Reintroduced Theme Options.
+
+Version 1.0.42 (14-09-16)
+- Bux Fix
+
+Version 1.0.41 (13-09-16)
+- Fixed display issue for dropdown in sidebar.
+- Fixed display issue for box elements.
+
+Version 1.0.40 (5-8-16)
+- Updated as per latest Theme Check guidelines
+
+Version 1.0.39 (14-04-16)
+- Fixed site font issue
+
+Version 1.0.38 (01-12-15)
+- Fix few minor issues related to customization
+
+Version 1.0.37 (16-07-15)
+- Change in theme customizer as per wordpress.org guidelines
+
+Version 1.0.36 (1-23-15)
+- Fixed conflict between slider free and pro plugin.
+- Added new plugin suggestion.
+
+Version 1.0.35 (11-25-14)
+- Removed theme activation notice.
+- Changed default links for slider.
+
+Version 1.0.34 (11-16-14)
+- Removed cyberchimps_mlu_init() as it has register_post_type() which is plugin-territory functionality.
+- Added sanitization to customizer options.
+- Removed deprecated screen_icon().
+
+Version 1.0.33 (9-24-14)
+- Placeholder fix for IE8/9.
+
+Version 1.0.32 (9-08-14)
+- Added iFeature slider to plugin suggestion list.
+
+Version 1.0.31 (8-22-14)
+- Updated Translations.
+
+Version 1.0.30 (8-08-14)
+- Fixed conflict of footer widgets with other widgets.
+- Responsive fix for uploaded video.
+
+Version 1.0.29 (7-25-14)
+- Layout fixed for multiple rows of footer widget.
+
+Version 1.0.28 (7-18-14)
+- Fixed broken link to CyberChimps logo.
+
+Version 1.0.27 (7-11-14)
+- Replaced logo with text in footer credit link.
+
+Version 1.0.26 (7-04-14)
+- Added option for Instagram Icon.
+
+Version 1.0.25 (6-27-14)
+- Core Translation Updated.
+
+Version 1.0.24 (6-20-14)
+- Code reformatting: Changed spaces to tabs.
+
+Version 1.0.23 (6-13-14)
+- Code reformatted: Changed spaces to tabs.
+
+Version 1.0.22 (6-06-14)
+- Uploading again due to technical problem.
+
+Version 1.0.21 (6-06-14)
+- Code reformatting: Changed spaces to tabs.
+
+Version 1.0.20 (5-30-14)
+- Fixed casing of CyberChimpsParallax class.
+
+Version 1.0.19 (5-23-14)
+- Updated ugrade text.
+- Removed left sidebar from widget section.
+- Removed "Custom Callout" from sub settings.
+
+Version 1.0.18 (5-16-14)
+- Correct spelling of CyberChimps/CSS.
+- Change text for Google font field.
+- Added cyberchimps_ prefix to couple of functions.
+- Changed CyberChimps logo on theme options page.
+- Changed "alt" text of logo to the site name instead of "logo".
+- Regenerated ".mo" files as they were 0KB each before, hence breaking the translation.
+
+Version 1.0.17 (5-9-14)
+- Fixed W3C validator error issue with IE compatibility meta tags.
+- Fixed missing image error: removed unused function.
+- Added FooBox as recommended plugin.
+- Fixed unwanted slider link space consumption.
+
+Version 1.0.16 (5-2-14)
+- Fixed byline toggle issue.
+- Fixed missing image error: removed unused function.
+
+Version 1.0.15 (4-24-14)
+- Fixed undefined $ error in browser console.
+
+Version 1.0.14 (4-24-14)
+- Added recommendation for clef plugin.
+- Updated translations.
+- Youtube video fixed.
+
+Version 1.0.13 (4-16-14)
+- Changed social font icons to font awesome.
+- Removed unwanted function_exists() conditional wrapper.
+- Fixed post title being hidden at mobile level.
+
+Version 1.0.12 (4-9-14)
+-Added upgrade button to the free theme customizer.
+-Fixed Vimeo video responsiveness.
+
+Version 1.0.11 (4-3-14)
+- Added new background option.
+- Removed wp_register_style(or script) for local css/js files.
+
+Version 1.0.10 (3-27-14)
+- Updated Elements Translation.
+- Mobile menu scrolling fixed.
+- Updated social icon screenshot.
+
+Version 1.0.9 (3-21-14)
+- Fixed IE8 compatibility issue.
+
+Version 1.0.8 (3-12-14)
+- Fixed duplicate plugin install notification in option page.
+- Modified "More Themes" page to show up all CyberChimps free theme with option to install/activate right there.
+
+Version 1.0.7 (3-5-14)
+- Fixed conflict between blog post excerpt option and bbpress user profile page.
+- Set up element options defaults for better wp.org preview.
+- Added filter for background default args.
+- HTML Error fix: Added space before menu>li>attribute.
+
+Version 1.0.6 (2-27-14)
+- Updated elements images along with boxes images.
+- Fixed Read more text option.
+- Responsive toggle fix: tweaked full-width-container width.
+- Background option fix.
+- Removed post format icon from page.
+- Updated screenshot.
+
+Version 1.0.5 (2-18-14)
+- Slider is made to be start sliding on page load.
+
+Version 1.0.3 - 1.0.4 (02-13-14)
+
+- Updated translations
+- Fixed parallax bug
+
+Version 1.0.1 - 1.0.2 (02-07-14)
+
+- Initial bug fixes
+
+Version 1.0.0 (12-5-13)
+
+- Initial Release

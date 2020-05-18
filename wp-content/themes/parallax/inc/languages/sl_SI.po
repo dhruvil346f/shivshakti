@@ -1,0 +1,249 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Parallax\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-22 10:08:48 UTC\n"
+"PO-Revision-Date: 2014-01-22 17:38+0530\n"
+"Last-Translator: Surya <surya@cyberchimps.com>\n"
+"Language-Team: Slovenian, Slovenia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+
+#: ../../404.php
+msgid "Oops! That page cannot be found."
+msgstr ""
+
+#: ../../404.php
+msgid ""
+"It looks like nothing was found at this location. Maybe try searching for it?"
+msgstr ""
+"Izgleda, da ni bilo nič ugotovljeno na tej lokaciji. Morda poskusite "
+"poiskati?"
+
+#: ../../archive.php
+msgid "Category Archives: %s"
+msgstr "Category Archives: %s"
+
+#: ../../archive.php
+msgid "Tag Archives: %s"
+msgstr "Tag Archives: %s"
+
+#: ../../archive.php
+msgid "Author Archives: %s"
+msgstr "Avtor Archives: %s"
+
+#: ../../archive.php
+msgid "Daily Archives: %s"
+msgstr "Dnevni Arhiv: %s"
+
+#: ../../archive.php
+msgid "Monthly Archives: %s"
+msgstr "Mesečni arhivi: %s"
+
+#: ../../archive.php
+msgid "Yearly Archives: %s"
+msgstr "Letno arhivov: %s"
+
+#: ../../archive.php ../../footer.php ../../sidebar-left.php
+#: ../../sidebar-right.php ../../sidebar.php
+msgid "Archives"
+msgstr ""
+
+#: ../../comments.php
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+
+#: ../../comments.php
+msgid "Comment navigation"
+msgstr ""
+
+#: ../../comments.php
+msgid "Older Comments"
+msgstr ""
+
+#: ../../comments.php
+msgid "Newer Comments"
+msgstr ""
+
+#: ../../comments.php
+msgid "Comments are closed."
+msgstr ""
+
+#: ../../content.php
+msgid "Permalink to %s"
+msgstr "Permalink: %s"
+
+#: ../../content.php
+msgid "Continue reading"
+msgstr ""
+
+#: ../../content.php ../../image.php
+msgid "Pages:"
+msgstr ""
+
+#: ../../content.php ../../image.php
+msgid "Edit"
+msgstr "Uredi"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "Pages"
+msgstr "Strani"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "Categories"
+msgstr ""
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "http://wordpress.org/"
+msgstr "http://sl.wordpress.org/"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+
+#: ../../functions.php
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: ../../functions.php
+msgid "(Edit)"
+msgstr "(Urejanje)"
+
+#: ../../functions.php
+msgid "says:"
+msgstr ""
+
+#: ../../functions.php
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../../functions.php
+msgid "%1$s at %2$s"
+msgstr "%1$ s na %2$ s"
+
+#: ../../functions.php
+msgid "CyberChimps Professional Responsive WordPress Theme"
+msgstr "CyberChimps strokovno odziven WordPress tema"
+
+#: ../../functions.php
+msgid "Slider Lite"
+msgstr ""
+
+#: ../../functions.php
+msgid "Boxes"
+msgstr ""
+
+#: ../../functions.php
+msgid "Portfolio Lite"
+msgstr ""
+
+#: ../../functions.php
+msgid "Post Page"
+msgstr ""
+
+#: ../../image.php
+msgid "Published"
+msgstr "Objavljeno"
+
+#: ../../image.php
+msgid "size"
+msgstr "Velikost"
+
+#: ../../image.php
+msgid "in"
+msgstr ""
+
+#: ../../image.php
+msgid "Previous"
+msgstr "prejšnji"
+
+#: ../../image.php
+msgid "Next"
+msgstr "Naslednja"
+
+#: ../../image.php
+msgid "Post a comment"
+msgstr ""
+
+#: ../../image.php
+msgid "or leave a trackback"
+msgstr ""
+
+#: ../../image.php
+msgid "Trackback URL"
+msgstr ""
+
+#: ../../image.php
+msgid "Comments are closed, but you can leave a trackback:"
+msgstr ""
+
+#: ../../image.php
+msgid "Trackbacks are closed, but you can"
+msgstr ""
+
+#: ../../image.php
+msgid "post a comment"
+msgstr ""
+
+#: ../../image.php
+msgid "Both comments and trackbacks are currently closed."
+msgstr ""
+
+#: ../../no-results.php
+msgid "Nothing Found"
+msgstr ""
+
+#: ../../no-results.php
+msgid "Ready to publish your first post?"
+msgstr "Pripravljen, da objavijo svoj prvi post?"
+
+#: ../../no-results.php
+msgid "Get started here"
+msgstr ""
+
+#: ../../no-results.php
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../../no-results.php
+msgid ""
+"It seems we cannot find what you are looking for. Perhaps searching can help."
+msgstr ""
+"Zdi se, da ne moremo najti tisto, kar iščete. Morda iskanje lahko pomaga."
+
+#: ../../search.php
+msgid "Search Results for: %s"
+msgstr "Iskanje rezultatov za: %s"
+
+#: ../../searchform.php
+msgid "Search"
+msgstr "išči"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "Subscribe"
+msgstr "Naročilo"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "Entries (RSS)"
+msgstr ""
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "Comments (RSS)"
+msgstr ""
