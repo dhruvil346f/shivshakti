@@ -1,0 +1,46 @@
+<?php global $SlideDeckPlugin; ?>
+ <div class="slide-content">
+    <div class="slide-content-inner">
+        
+        <div class="slidedeck-vertical-center-outer">
+            <div class="slidedeck-vertical-center-middle">
+                <div class="slidedeck-vertical-center-inner">
+                    
+                    <h3 class="slide-title" itemprop="name headline">
+                        <?php echo $excerpt; ?>
+                    </h3>
+                    <div class="slide-meta">
+                        <?php if( !empty( $author_avatar ) ): ?>
+                            <img src="<?php echo $author_avatar; ?>" alt="<?php echo $author_name; ?>" class="slide-author-avatar" />
+                        <?php endif; ?>
+                        <span class="slide-author">
+                            <a class="accent-color" href="http://twitter.com/<?php echo $author_username; ?>" target="_blank"><?php echo $author_name; ?></a>
+                        </span>
+                        <span class="slide-date"><a class="accent-color" href="<?php echo $permalink; ?>" target="_blank"><?php echo $created_at; ?></a></span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- here for cta -->
+<?php if($slidedeck['options']['cta-enable'] == 1){ ?>
+        <div class= "cta-enable accent-color <?php echo $slidedeck['options']['cta-position'];?>" style = "background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8); display: block; height: 13%; position: absolute; width: 25%; z-index: 2;">
+	<button style="background:inherit;" onclick="CTAfunction('<?php echo $permalink;?>')"><?php _e( "Read Now", $this->namespace ); ?></button></div>
+
+<?php }?>
+<script>
+function CTAfunction(url) {
+    //window.location=url;
+window.open(url, '_blank');
+}
+</script>
+<meta class="hidden" itemprop="caption" content="<?php echo strip_tags( $title ); ?>" />
+<?php if( !empty($image) && $SlideDeckPlugin->is_first_slide ){ ?>
+    <img itemprop="thumbnailUrl image" class="sd2-slide-background" src="<?php echo $image; ?>" alt="<?php echo strip_tags( $title ); ?>" />
+<?php } else if( !empty($image) ) { ?>
+	<img itemprop="thumbnailUrl image" class="slide-deck-lazy sd2-slide-background" data-src="<?php echo $image; ?>" src="<?php echo SLIDEDECK_BLANK_IMAGE; ?>" alt="<?php echo strip_tags( $title ); ?>" />
+	<noscript><img class="nolazy sd2-slide-background" src="<?php echo $image; ?>" alt="<?php echo strip_tags( $title ); ?>" /></noscript>
+<?php } ?>

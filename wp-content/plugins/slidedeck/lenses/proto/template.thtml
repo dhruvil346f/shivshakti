@@ -1,0 +1,55 @@
+<?php global $SlideDeckPlugin; ?> 
+<div class="slide-content">
+
+    <div class="slide-content-inner">
+        <h3 class="slide-title" itemprop="name headline">
+            <?php if( $slidedeck['options']['linkTitle'] == true ): ?><a href="<?php echo $permalink; ?>" target="<?php echo $target; ?>"><?php endif; ?>
+                <?php echo $title; ?>
+            <?php if( $slidedeck['options']['linkTitle'] == true ): ?></a><?php endif; ?>
+        </h3>
+        <div class="slide-meta">
+            <?php if( !empty( $author_avatar ) ): ?>
+                <img src="<?php echo $author_avatar; ?>" alt="<?php echo $author_name; ?>" class="slide-author-avatar" />
+            <?php endif; ?>
+            <span class="slide-author">
+                <?php if( !empty( $author_url ) && $slidedeck['options']['linkAuthorName'] == true ): ?><a href="<?php echo $author_url; ?>" target="_blank"><?php endif; ?>
+                    <?php echo $author_name; ?>
+                <?php if( !empty( $author_url ) && $slidedeck['options']['linkAuthorName'] == true ): ?></a><?php endif; ?>
+            </span>
+            <span class="slide-date"><?php echo $created_at; ?></span>
+        <?php if(isset($slidedeck['options']['product_rating']) && $slidedeck['options']['product_rating'] == true ){ ?>
+    <span class="slide-product-rating" style = "display:block;"><?php echo (!empty($nodes['product_rating'])) ? $nodes['product_rating']." / 5.0" : '0.0 / 5.0'; ?><span style = "font-size: 0.85em !important;"><?php _e( " rating", $this->namespace ); ?></span></span>
+ <?php }?>
+        </div>
+        <div class="slide-text"><?php echo $excerpt; ?> <a href="<?php echo $permalink; ?>" class="readmore accent-color" target="<?php echo $target; ?>">Read More</a></div>
+    </div>
+</div>
+<?php if(isset($slidedeck['options']['cta-enable']) && $slidedeck['options']['cta-enable'] == 1){ ?>
+<?php if( $slidedeck['options']["cta-custom-opt"]== "cbutton"  && !empty( $permalink )){global $slidedeck_fonts;//&& !is_admin()?>
+       
+	<button class= "cta-enable <?php echo $slidedeck['options']['cta-position'];?>" style = "cursor:pointer; background-color: <?php echo $slidedeck['options']['cta-btn-color'];?>; color: <?php echo $slidedeck['options']['cta-text-color'];?>; " onclick="CTAfunction('<?php echo $permalink;?>')"><span class = "cta-btn-text-font" style ="font-family:<?php echo $slidedeck_fonts[$slidedeck['options']['ctaBtnTextFont']]['stack'];?>; font-size:<?php echo $slidedeck['options']['ctaBtnFontSize'];?>; "><?php echo $slidedeck['options']['cta-btn-text'] ?><span></button>
+<?php 
+}
+else if( $slidedeck['options']["cta-custom-opt"]== "cimage" && !empty( $permalink )){//&& !is_admin()  ?>
+
+<img class="cta-custom-img" src = "<?php echo $slidedeck['options']['cta-custom-img-url'];?>" style="cursor:pointer; z-index:10; position:absolute; height: <?php echo $slidedeck['options']['cta-css-height']; ?>%; width: <?php echo $slidedeck['options']['cta-css-height']; ?>%; left: <?php echo $slidedeck['options']['cta-css-left']; ?>%; bottom:<?php echo $slidedeck['options']['cta-css-bottom']; ?>%; " onclick="CTAfunction('<?php echo $permalink;?>')" />		
+
+<?php
+}
+}
+?>
+<?php if(isset($nodes['show-price']) && $nodes['show-price'] == 1):  ?>
+    
+<div class ="price_icon sd-woo-overlay <?php echo $nodes['price-position'];?> ">
+	<span>	
+		<?php do_action('slidedeck_price_output',$nodes); ?>
+		
+	</span>
+</div>
+<?php endif; ?><meta class="hidden" itemprop="caption" content="<?php echo strip_tags( $title ); ?>" />
+<?php if( !empty($image) && $SlideDeckPlugin->is_first_slide ){ ?>
+    <img itemprop="thumbnailUrl image" class="sd2-slide-background" src="<?php echo $image; ?>" alt="<?php echo strip_tags( $title ); ?>" />
+<?php } else if( !empty($image) ) { ?>
+	<img itemprop="thumbnailUrl image" class="slide-deck-lazy sd2-slide-background" data-src="<?php echo $image; ?>" src="<?php echo SLIDEDECK_BLANK_IMAGE; ?>" alt="<?php echo strip_tags( $title ); ?>" />
+	<noscript><img class="nolazy sd2-slide-background" src="<?php echo $image; ?>" alt="<?php echo strip_tags( $title ); ?>" /></noscript>
+<?php } ?>

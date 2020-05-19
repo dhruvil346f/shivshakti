@@ -1,0 +1,66 @@
+<?php if($video_meta['service'] !='html5') { ?>
+<div class="video-wrapper" id="video-wrapper">
+<?php } else { ?>
+<div class="" style="width:100%;height:100%;">
+<?php } ?>
+
+<?php if(isset($slidedeck['options']['cta-enable']) && $slidedeck['options']['cta-enable'] == 1){ ?>
+<?php if( $slidedeck['options']["cta-custom-opt"]== "cbutton"  && !empty( $permalink )){global $slidedeck_fonts;//&& !is_admin()?>
+
+	<button class= "cta-enable <?php echo $slidedeck['options']['cta-position'];?>" style = "cursor:pointer; background-color: <?php echo $slidedeck['options']['cta-btn-color'];?>; color: <?php echo $slidedeck['options']['cta-text-color'];?>; " onclick="CTAfunction('<?php echo $permalink;?>')"><span class = "cta-btn-text-font" style ="font-family:<?php echo $slidedeck_fonts[$slidedeck['options']['ctaBtnTextFont']]['stack'];?>; font-size:<?php echo $slidedeck['options']['ctaBtnFontSize'];?>; "><?php echo $slidedeck['options']['cta-btn-text'] ?><span></button>
+<?php
+}
+else if( $slidedeck['options']["cta-custom-opt"]== "cimage" && !empty( $permalink )){//&& !is_admin()  ?>
+
+<img class="cta-custom-img" src = "<?php echo $slidedeck['options']['cta-custom-img-url'];?>" style="cursor:pointer; z-index:10; position:absolute; height: <?php echo $slidedeck['options']['cta-css-height']; ?>%; width: <?php echo $slidedeck['options']['cta-css-height']; ?>%; left: <?php echo $slidedeck['options']['cta-css-left']; ?>%; bottom:<?php echo $slidedeck['options']['cta-css-bottom']; ?>%; " onclick="CTAfunction('<?php echo $permalink;?>')" />
+
+<?php
+}
+}
+?>
+
+
+    <?php  echo $video_container; ?>
+	<!--<div class="cover sd2-slide-background" data-sd2-slide-image="<?php if( isset($video_meta['full_image']) ){ echo $video_meta['full_image']; } else { $video_meta['full_image'] = "";}?>">-->
+	<div class="cover sd2-slide-background" style="background-image: url(<?php echo $video_meta['full_image']; ?>);">
+
+        <div class="sd2-node-caption">
+
+        	<?php if( empty( $image ) || $size == 'small' ): ?>
+
+                <div class="sd2-vertical-center-outer">
+                    <div class="sd2-vertical-center-middle">
+                        <div class="sd2-vertical-center-inner">
+
+        	<?php endif; ?>
+
+        	<div class="sd2-slide-title accent-color">
+        	    <span class="sd2-slide-title-inner">
+                    <?php if( !empty( $permalink ) ): ?><a class="accent-color" href="<?php echo $permalink; ?>" target="<?php echo $target; ?>"><?php endif; ?>
+                        <?php echo $title; ?>
+                    <?php if( !empty( $permalink ) ): ?></a><?php endif; ?>
+                </span>
+        	</div>
+
+            <?php if( !empty( $content ) ): ?>
+        		<div class="sd2-slide-text">
+        		    <?php echo $filtered_content; ?>
+    		    </div>
+
+                <a href="<?php echo $permalink; ?>" class="readmore play-video-alternative" target="<?php echo $target; ?>"><?php _e( "Play Video", $this->namespace ); ?></a>
+        	<?php endif; ?>
+
+        	<?php if( empty( $image ) || $size == 'small' ): ?>
+
+                        </div>
+                    </div>
+                </div>
+
+        	<?php endif; ?>
+
+        </div>
+
+        <a class="play-video-button play" href="#play">Click To Play</a>
+    </div>
+
+</div>

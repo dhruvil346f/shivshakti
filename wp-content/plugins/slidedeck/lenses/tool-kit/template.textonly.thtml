@@ -1,0 +1,57 @@
+<div class="sd-node-title-box">
+<?php if(isset($slidedeck['options']['cta-enable']) && $slidedeck['options']['cta-enable'] == 1){ ?>
+<?php if( $slidedeck['options']["cta-custom-opt"]== "cbutton"  && !empty( $permalink )){global $slidedeck_fonts;//&& !is_admin()?>
+       
+	<button class= "cta-enable <?php echo $slidedeck['options']['cta-position'];?>" style = "cursor:pointer; background-color: <?php echo $slidedeck['options']['cta-btn-color'];?>; color: <?php echo $slidedeck['options']['cta-text-color'];?>; " onclick="CTAfunction('<?php echo $permalink;?>')"><span class = "cta-btn-text-font" style ="font-family:<?php echo $slidedeck_fonts[$slidedeck['options']['ctaBtnTextFont']]['stack'];?>; font-size:<?php echo $slidedeck['options']['ctaBtnFontSize'];?>; "><?php echo $slidedeck['options']['cta-btn-text'] ?><span></button>
+<?php 
+}
+else if( $slidedeck['options']["cta-custom-opt"]== "cimage" && !empty( $permalink )){//&& !is_admin()  ?>
+
+<img class="cta-custom-img" src = "<?php echo $slidedeck['options']['cta-custom-img-url'];?>" style="cursor:pointer; z-index:10; position:absolute; height: <?php echo $slidedeck['options']['cta-css-height']; ?>%; width: <?php echo $slidedeck['options']['cta-css-height']; ?>%; left: <?php echo $slidedeck['options']['cta-css-left']; ?>%; bottom:<?php echo $slidedeck['options']['cta-css-bottom']; ?>%; " onclick="CTAfunction('<?php echo $permalink;?>')" />		
+
+<?php
+}
+}
+?>
+	
+	<?php if( empty($nodes['image']) || $size == 'small' ): ?>
+	    
+        <div class="slidedeck-vertical-center-outer">
+            <div class="slidedeck-vertical-center-middle">
+                <div class="slidedeck-vertical-center-inner">	
+	
+	<?php endif; ?>
+	
+	<div class="slide-title accent-color">
+        <?php if( $slidedeck['options']['linkTitle'] == true ): ?><a class="accent-color" href="<?php echo $permalink; ?>" target="<?php echo $target; ?>"><?php endif; ?>
+            <?php echo $title; ?>
+        <?php if( $slidedeck['options']['linkTitle'] == true ): ?></a><?php endif; ?>
+	</div>
+	
+    <div class="slide-meta">
+        <?php if( isset( $author_avatar ) && !empty( $author_avatar ) ): ?>
+            <img src="<?php echo $author_avatar; ?>" alt="<?php echo $author_name; ?>" class="slide-author-avatar" />
+        <?php endif; ?>
+        <span class="slide-author">
+            <?php if( !empty( $author_url ) && $slidedeck['options']['linkAuthorName'] == true ): ?><a href="<?php echo $author_url; ?>" target="_blank"><?php endif; ?>
+                <?php echo $author_name; ?>
+            <?php if( !empty( $author_url ) && $slidedeck['options']['linkAuthorName'] == true ): ?></a><?php endif; ?>
+        </span>
+        <span class="slide-date"><?php echo $created_at; ?></span>
+    </div>
+	
+	<?php if( isset( $excerpt ) && !empty( $excerpt ) ): ?>
+		<p class="slide-text"><?php echo $excerpt; ?> 
+		    <a href="<?php echo $permalink; ?>" class="readmore accent-color" target="<?php echo $target; ?>"><?php _e( "Read More", $this->namespace ); ?></a>
+	    </p>
+	<?php endif; ?>
+	
+	<?php if( empty($nodes['image']) || $size == 'small' ): ?>
+	    
+                </div>
+            </div>
+        </div>
+        
+	<?php endif; ?>
+	
+</div>
